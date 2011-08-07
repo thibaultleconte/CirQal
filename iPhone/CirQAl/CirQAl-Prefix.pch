@@ -1,0 +1,26 @@
+//
+// Prefix header for all source files of the 'CirQAl' target in the 'CirQAl' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import <MapKit/MapKit.h>
+    #import <CoreLocation/CoreLocation.h>
+
+    #import "Answer.h"
+    #import "Question.h"
+    #import "CirQAlAppDelegate.h"
+    #import "Communication.h"
+    #import "MapAnnotation.h"
+    #import "QuestionViewController.h"
+    #import "MapViewController.h"
+    #import "AnswerViewController.h"
+    #import "ResponseViewController.h"
+#endif
