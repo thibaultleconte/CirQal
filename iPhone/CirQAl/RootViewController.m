@@ -10,9 +10,21 @@
 
 @implementation RootViewController
 
+@synthesize webView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    firstLoad = YES;
+    
+    NSString *urlAddress = @"http://88.190.232.179/ws/index.php";
+        
+    NSURL *url = [NSURL URLWithString: urlAddress];
+        
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL: url];
+        
+    [webView loadRequest: requestObj];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -52,14 +64,26 @@
 
 - (void)viewDidUnload
 {
+    [self setWebView:nil];
     [super viewDidUnload];
 
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)aWebView 
+{
+    if (firstLoad) 
+    {
+        firstLoad = NO;
+        
+        webView.alpha = 1.0;
+    }
+}
+
 - (void)dealloc
 {
+    [webView release];
     [super dealloc];
 }
 

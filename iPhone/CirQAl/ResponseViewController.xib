@@ -45,7 +45,7 @@
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUIImageView" id="257932650">
+					<object class="IBUIImageView" id="992012323">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrameSize">{320, 480}</string>
@@ -147,7 +147,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Answer:</string>
 						<reference key="IBUIFont" ref="745401253"/>
-						<object class="NSColor" key="IBUITextColor" id="581644288">
+						<object class="NSColor" key="IBUITextColor" id="263240078">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEAA</bytes>
 						</object>
@@ -168,7 +168,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Question:</string>
 						<reference key="IBUIFont" ref="745401253"/>
-						<reference key="IBUITextColor" ref="581644288"/>
+						<reference key="IBUITextColor" ref="263240078"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -272,7 +272,7 @@
 							<reference ref="146933121"/>
 							<reference ref="176765992"/>
 							<reference ref="829099316"/>
-							<reference ref="257932650"/>
+							<reference ref="992012323"/>
 							<reference ref="158019284"/>
 						</object>
 						<reference key="parent" ref="0"/>
@@ -320,7 +320,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">20</int>
-						<reference key="object" ref="257932650"/>
+						<reference key="object" ref="992012323"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -368,7 +368,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">20</int>
+			<int key="maxID">21</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

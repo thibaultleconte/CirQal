@@ -6,11 +6,15 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-@interface RootViewController : UIViewController 
+@interface RootViewController : UIViewController <UIWebViewDelegate>
 {
-
+    UIWebView *webView;
+    
+    BOOL firstLoad;
 }
 
 - (IBAction)btnAsk: (id)sender;
+
+@property (nonatomic, retain) IBOutlet UIWebView *webView;
 
 @end

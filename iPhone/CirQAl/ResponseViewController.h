@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ResponseViewController : UIViewController <UITextFieldDelegate>
+@interface ResponseViewController : UIViewController
 {
     Communication *comm;
     

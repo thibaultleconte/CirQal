@@ -6,7 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-@interface QuestionViewController : UIViewController <UITextFieldDelegate>
+@interface QuestionViewController : UIViewController <UITextViewDelegate>
 {    
     Communication *comm;
         

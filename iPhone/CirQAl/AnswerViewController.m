@@ -92,7 +92,7 @@
     
     [comm release];
     
-    [self.navigationController popViewControllerAnimated: YES];
+    [self.navigationController popToRootViewControllerAnimated: YES];
 }
 
 - (void)viewDidUnload
@@ -110,11 +110,20 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (BOOL)textFieldShouldReturn: (UITextField *)textField 
+- (BOOL)textView: (UITextView *)textView shouldChangeTextInRange: (NSRange)range replacementText: (NSString *)string
 {
-    [textField resignFirstResponder];
+	BOOL changeText = YES;
+	
+	NSRange rangeNewLine = [string rangeOfString: @"\n"];
     
-    return NO;
+	if (rangeNewLine.location != NSNotFound)
+	{
+		changeText = NO;
+        
+		[textViewAnswer resignFirstResponder];
+	}
+	
+	return changeText;
 }
 
 @end

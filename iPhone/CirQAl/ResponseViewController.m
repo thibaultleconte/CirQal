@@ -101,14 +101,7 @@
     
     [comm release];
     
-    [self.navigationController popViewControllerAnimated: YES];
-}
-
-- (BOOL)textFieldShouldReturn: (UITextField *)textField 
-{
-    [textField resignFirstResponder];
-    
-    return NO;
+    [self.navigationController popToRootViewControllerAnimated: YES];
 }
 
 @end
